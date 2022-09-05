@@ -130,9 +130,9 @@ main{
 
 footer{
     background-color: var(--discord-dark);
-    height: 890px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .download-button{
@@ -150,12 +150,49 @@ footer{
     background-color: var(--discord-blue);
 }
 
-footer>ol,
-footer>h3{
-    color: var(--discord-blue);
+footer>.container{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-footer>.container{
-    margin-top: 2rem;
-    background-color: black;
+.col-5{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(100% /5);
+}
+
+.col-5>button{
+    background: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.col-5>ul,
+.col-5>h3{
+    color: var(--discord-blue);
+    list-style: none;
+}
+
+li{
+    padding: 0.3rem 0;
+}
+
+.social{
+    text-align: center;
+}
+
+.social>a{
+    padding-right: 1rem;
+}
+
+.footer-bar{
+    margin: 3rem 0;
+    border-top: 1px solid var(--discord-blue);
+    padding-top: 1rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
 }
