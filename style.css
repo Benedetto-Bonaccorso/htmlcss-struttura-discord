@@ -21,9 +21,8 @@ header{
 
 button{
     border-radius: 15px;
-    height: 2rem;
     margin: 0 1rem;
-    padding:0 1rem;
+    padding:0.5rem 1rem;
     border-style: none;
 }
 
@@ -160,7 +159,7 @@ footer>.container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: calc(100% /5);
+    width: calc(100% /6.7);
 }
 
 .col-5>button{
@@ -186,6 +185,10 @@ li{
 
 .social>a{
     padding-right: 1rem;
+}
+
+footer>.container{
+    justify-content: space-between;
 }
 
 .footer-bar{
