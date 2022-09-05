@@ -1,0 +1,252 @@
+:root{
+    --discord-dark: #23272A;
+    --background-gray: #F6F6F6;
+    --prova: hsl(0,0%,96%);
+    --discord-blue: #7289DA;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    border-radius: 15px;
+    margin: 0 1rem;
+    padding:0.5rem 1rem;
+    border-style: none;
+}
+
+.container{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+header>.container{
+    margin-top: 1rem;
+    min-width: 650px;
+    position: absolute;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.flex-item{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-item>a{
+    margin: 0 3%;
+}
+
+main{
+    
+}
+
+.row{
+
+}
+
+.sections{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.sections>.container{
+    flex-direction: column;
+}
+
+.background-component{
+    position: relative;
+    bottom: 6.9vw;
+    filter: opacity(.03);
+}
+
+.background-image{
+    filter: opacity(0.04); 
+}
+
+.background-image-bottom{
+    filter: opacity(0.04); 
+    transform: rotate(180deg);
+}
+
+.gray-background{
+    background-color: var(--background-gray);
+}
+
+.section{
+    padding: 3rem 0;
+    display: flex;
+    justify-content:center;
+}
+
+.section-alternative{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alternative-item{
+    max-width: 100%;
+    width: 400px;
+}
+
+.section-alternative>h1,
+.section-alternative>p{
+    max-width: 100%;
+}
+
+.section-alternative>img{
+    max-width: 70%;
+}
+
+.section-text-alternative{
+    text-align: center;
+}
+
+.placeholder{
+    width: 600px;
+    height: 400px;
+    background-color: bisque;
+}
+
+.section-text{
+    max-width: 15%;
+}
+
+.item{
+    margin: 0 3%;
+}
+
+.background{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    background-image: url(./assets/jumbo.png);
+    background-size: cover;
+    padding-bottom: 4rem;
+}
+
+.intestazione{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 8rem;
+    width: 80%;
+}
+
+.intestazione>p{
+    margin-top: 2rem;
+}
+
+.buttons{
+    margin: 1rem 0;
+}
+
+.buttons>.dark{
+    background-color: var(--discord-dark);
+    color: white;
+}
+
+footer{
+    background-color: var(--discord-dark);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.download-button{
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.download-button>h3{
+    background-image: url(./assets/stars.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.download-button h3{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.blue{
+    color: white;
+    background-color: var(--discord-blue);
+}
+
+footer>.container{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col-5{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(100% /6.7);
+}
+
+.col-5>button{
+    background: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.col-5>ul,
+.col-5>h3{
+    color: var(--discord-blue);
+    list-style: none;
+}
+
+li{
+    padding: 0.3rem 0;
+}
+
+.social{
+    text-align: center;
+}
+
+.social>a{
+    padding-right: 1rem;
+}
+
+footer>.container{
+    justify-content: space-between;
+}
+
+.footer-bar{
+    margin: 3rem 0;
+    border-top: 1px solid var(--discord-blue);
+    padding-top: 1rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
