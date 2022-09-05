@@ -75,12 +75,6 @@ main{
     flex-direction: column;
 }
 
-.background-component{
-    position: relative;
-    bottom: 6.9vw;
-    filter: opacity(.03);
-}
-
 .background-image{
     filter: opacity(0.04); 
 }
@@ -108,14 +102,10 @@ main{
     align-items: center;
 }
 
-.alternative-item{
-    max-width: 100%;
-    width: 400px;
-}
-
-.section-alternative>h1,
-.section-alternative>p{
-    max-width: 100%;
+.section-text-alternative>h1,
+.section-text-alternative>p{
+    
+    width: 70%;
 }
 
 .section-alternative>img{
@@ -123,6 +113,9 @@ main{
 }
 
 .section-text-alternative{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -216,7 +209,7 @@ footer>.container{
 .col-5>button{
     background: none;
     color: white;
-    padding: 0;
+    padding: 1rem 0;
     margin: 0;
 }
 
@@ -224,6 +217,7 @@ footer>.container{
 .col-5>h3{
     color: var(--discord-blue);
     list-style: none;
+    padding: 0.5rem 0
 }
 
 li{
@@ -231,11 +225,22 @@ li{
 }
 
 .social{
+    color: white;
+    display: flex;
     text-align: center;
 }
 
 .social>a{
     padding-right: 1rem;
+    width: 2rem;
+}
+
+.social>a>img{
+    filter: invert(100%);
+}
+
+button>img{
+    max-height: 1rem;
 }
 
 footer>.container{
