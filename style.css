@@ -1,3 +1,9 @@
+:root{
+    --discord-dark: #23272A;
+    --background-gray: #F6F6F6;
+    --discord-blue: #7289DA
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -69,7 +75,7 @@ main{
 }
 
 .row:nth-child(even){
-    background-color: gray;
+    background-color: var(--background-gray);
 }
 
 .section{
@@ -79,13 +85,13 @@ main{
 }
 
 .placeholder{
-    width: 400px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
     background-color: bisque;
 }
 
 .section-text{
-    width: 30%;
+    max-width: 15%;
 }
 
 .item{
@@ -118,11 +124,38 @@ main{
 }
 
 .buttons>.dark{
-    background-color: black;
+    background-color: var(--discord-dark);
     color: white;
 }
 
 footer{
-    background-color: red;
-    height: 500px;
+    background-color: var(--discord-dark);
+    height: 890px;
+    display: flex;
+    justify-content: center;
+}
+
+.download-button{
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.download-button h3{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.blue{
+    color: white;
+    background-color: var(--discord-blue);
+}
+
+footer>ol,
+footer>h3{
+    color: var(--discord-blue);
+}
+
+footer>.container{
+    margin-top: 2rem;
+    background-color: black;
 }
