@@ -48,6 +48,15 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: var(--discord-blue);
+}
+
+.footer-bar>button:hover{
+    background-color: var(--background-gray);
+    color: var(--discord-dark);
+}
+
 .flex-item{
     display: flex;
     justify-content: center;
@@ -165,6 +174,10 @@ main{
     color: white;
 }
 
+.buttons>.dark:hover{
+    background-color: var(--discord-blue);
+}
+
 footer{
     background-color: var(--discord-dark);
     display: flex;
@@ -191,6 +204,10 @@ footer{
 .blue{
     color: white;
     background-color: var(--discord-blue);
+}
+
+.blue:hover{
+    background-color: var(--discord-dark);
 }
 
 footer>.container{
